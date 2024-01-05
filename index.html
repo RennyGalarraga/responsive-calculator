@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CALCULADORA</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div>
+            <div class="toggle" id="toogle">
+                <div class="switch" id="switch"></div>
+            </div>
+        </div>
+        <div class="calculadora" id="calculadora">
+            <div class="pantalla">
+                <div id="valor-anterior"></div>
+                <div id="valor-actual"></div>
+            </div>
+            <button class="bt-gris gris" onclick="pantalla.borrarTodo()">C</button>
+            <button class="bt-gris operador gris" value="inversor">±</button>
+            <button class="bt-gris operador gris" value="porcentaje">%</button>
+            <button class="bt-azul operador azul" value="dividir">÷</button>
+            <button class="numero">7</button>
+            <button class="numero">8</button>
+            <button class="numero">9</button>
+            <button class="bt-azul operador azul" value="multiplicar">×</button>
+            <button class="numero">4</button>
+            <button class="numero">5</button>
+            <button class="numero">6</button>
+            <button class="bt-azul operador azul" value="restar">-</button>
+            <button class="numero">1</button>
+            <button class="numero">2</button>
+            <button class="numero">3</button>
+            <button class="bt-azul operador azul" value="sumar">+</button>
+            <button class="numero">.</button>
+            <button class="numero">0</button>
+            <button onclick="pantalla.borrar()">&#9003</button>
+            <button class="bt-azul operador azul" value="igual">=</button>
+        </div>
+    </div>
+    <script defer src="./js/calculadora.js" type="text/javascript"></script>
+</body>
+</html>
